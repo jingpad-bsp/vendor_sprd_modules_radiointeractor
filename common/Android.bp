@@ -1,0 +1,21 @@
+
+
+java_library {
+
+    srcs: [
+        "src/**/*.java",
+        "src/com/android/sprd/telephony/aidl/IRadioInteractor.aidl",
+        "src/com/android/sprd/telephony/aidl/IRadioInteractorCallback.aidl",
+        "src/com/android/sprd/telephony/aidl/IOperatorNameHandler.aidl",
+    ],
+
+    static_libs: [
+        "vendor.sprd.hardware.radio-V1.0-java",
+    ],
+
+    name: "radio_interactor_common",
+    optimize: {
+        enabled: false,
+    },
+    installable: true,
+}

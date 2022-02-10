@@ -1,0 +1,19 @@
+
+
+android_app {
+    name: "radio_interactor_service",
+
+    libs: [
+        "radio_interactor_common",
+    ],
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    privileged: true,
+    optimize: {
+        enabled: false,
+    },
+    platform_apis: true,
+
+}
